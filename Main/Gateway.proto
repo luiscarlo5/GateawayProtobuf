@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+// Mensagem para medir a temperatura
+message TemperatureData {
+  string sensor_id = 1;   // ID do sensor
+  float temperatura = 2;   // Temperatura medida em graus Celsius
+  int64 timestamp = 3;     // Timestamp para quando a medição foi feita
+}
+
+// Mensagem para controle do LED
+message LedControl {
+  string led_id = 1;      // ID do LED (pode ser 'LED1', 'LED2', etc.)
+  bool ligar = 2;         // Se 'true', o LED será ligado; se 'false', desligado
+  int64 timestamp = 3;    // Timestamp para quando a operação foi realizada
+}
+
+// Mensagem para medir a umidade
+message HumidityData {
+  string sensor_id = 1;   // ID do sensor
+  float umidade = 2;      // Umidade medida em porcentagem
+  int64 timestamp = 3;    // Timestamp para quando a medição foi feita
+}
