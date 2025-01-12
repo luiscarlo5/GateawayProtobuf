@@ -4,8 +4,8 @@ import struct
 def OuveMultcast():
 
     # Configurações do Multicast
-    MCAST_GRP = '239.255.0.1'  # Deve coincidir com o do remetente
-    MCAST_PORT = 6789          # Deve coincidir com o do remetente
+    MCAST_GRP = '239.255.0.1'  #  remetente
+    MCAST_PORT = 6789          
 
     # Criando o socket UDP
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
